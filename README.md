@@ -15,7 +15,8 @@ The more data you supply, the more accurate it will be.
 Example:
 
 Turn
-![image](https://github.com/69Jesse/Python-Json-Class-Creator/assets/104533077/157963c9-b50a-4818-a8a2-d7005e4cd6b6)
+![image](https://github.com/69Jesse/Python-Json-Class-Creator/assets/104533077/c51ce602-c04c-49ef-92de-699144d9bbe0)
 into
-![image](https://github.com/69Jesse/Python-Json-Class-Creator/assets/104533077/14b6df36-a44d-45d8-aed4-0978531d0ce1)
+![image](https://github.com/69Jesse/Python-Json-Class-Creator/assets/104533077/cfcfd359-b6fb-4dfa-b636-9a846478dcc5)
 with ease
+(check `example.json`, `example.py`, `usage.py`)
