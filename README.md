@@ -12,11 +12,5 @@ create(name='SomeClass', data=JSON_DATA)
 That's it! The classes get saved to `classes.py`.
 The more data you supply, the more accurate it will be.
 
-Example:
-
-Turn
-![image](https://github.com/69Jesse/Python-Json-Class-Creator/assets/104533077/c51ce602-c04c-49ef-92de-699144d9bbe0)
-into
-![image](https://github.com/69Jesse/Python-Json-Class-Creator/assets/104533077/cfcfd359-b6fb-4dfa-b636-9a846478dcc5)
-with ease
-(check `example.json`, `example.py`, `usage.py`)
+For a good example:
+Check `example.py` where it turns `example.json` into `classes.py` for a use case like `usage.py`.
