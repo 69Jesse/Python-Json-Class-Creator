@@ -16,6 +16,12 @@ from classes import SomeClass
 JSON_DATA: list[dict[str, typing.Any]] = ...
 instances = [SomeClass(**data) for data in JSON_DATA]
 
+"""Example use case where JSON_DATA looks something like
+[
+  {"arg": 123, ...},
+  {"arg": 456, ...},
+  ...
+]```
 for ins in instances:
   if ins.arg == 123:
     do_useful_things(ins=ins)
