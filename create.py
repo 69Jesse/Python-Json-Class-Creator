@@ -6,6 +6,9 @@ from typing import (
 )
 
 
+INDENTATION_SPACES: int = 4
+# -1 for `\t` instead of spaces
+
 JSON: TypeAlias = dict[str, Any]
 
 
@@ -127,6 +130,8 @@ def create(
     text: str = '\n\n\n'.join(reversed(strings))
     typing_imports: list[str] = [f'{n},' for n in ('Any',) if n in text]
     text = (('from typing import (\n\t' + '\n\t'.join(typing_imports) + '\n)\n\n\n') if typing_imports else '') + text + '\n'
+    if INDENTATION_SPACES != -1:
+        text = text.replace('\t', ' '*INDENTATION_SPACES)
     with open(f'classes.py', 'w') as f:
         f.write(text)
     print('Done! Have fun..')
