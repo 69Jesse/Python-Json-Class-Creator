@@ -21,7 +21,8 @@ instances = [SomeClass(**data) for data in JSON_DATA]
   {"arg": 123, ...},
   {"arg": 456, ...},
   ...
-]"""
+]
+"""
 for ins in instances:
   if ins.arg == 123:
     do_useful_things(ins=ins)
