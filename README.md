@@ -9,7 +9,17 @@ JSON_DATA: list[dict[str, typing.Any]] = ...
 from create import create
 create(name='SomeClass', data=JSON_DATA)
 ```
-That's it! The classes get saved to `classes.py`.
+That's it! The classes get saved to `classes.py` which can be used like:
+```py
+from classes import SomeClass
+
+JSON_DATA: list[dict[str, typing.Any]] = ...
+instances = [SomeClass(**data) for data in JSON_DATA]
+
+for ins in instances:
+  if ins.arg == 123:
+    do_useful_things(ins=ins)
+```
 The more data you supply, the more accurate it will be.
 The algorithm is not very efficient, but as you only really require to run this once, it is no problem.
 
