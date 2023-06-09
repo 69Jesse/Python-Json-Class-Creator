@@ -11,6 +11,7 @@ create(name='SomeClass', data=JSON_DATA)
 ```
 That's it! The classes get saved to `classes.py`.
 The more data you supply, the more accurate it will be.
+The algorithm is not very efficient, but as you only really require to run this once, it is no problem.
 
 For a good example:
 Check `example.py` where it turns `example.json` into `classes.py` for a use case like `usage.py`.
